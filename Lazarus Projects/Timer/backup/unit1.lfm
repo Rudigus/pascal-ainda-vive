@@ -1,0 +1,56 @@
+object TimerForm: TTimerForm
+  Left = 1050
+  Height = 217
+  Top = 138
+  Width = 209
+  Caption = 'Timer'
+  ClientHeight = 217
+  ClientWidth = 209
+  LCLVersion = '1.8.2.0'
+  object Display: TLabel
+    Left = 24
+    Height = 73
+    Top = 24
+    Width = 168
+    Alignment = taCenter
+    AutoSize = False
+    Caption = '0s'
+    Font.Height = -64
+    Font.Name = 'Ubuntu'
+    ParentColor = False
+    ParentFont = False
+  end
+  object StartButton: TButton
+    Left = 24
+    Height = 25
+    Top = 128
+    Width = 75
+    Caption = 'Start'
+    OnClick = StartButtonClick
+    TabOrder = 0
+  end
+  object StopButton: TButton
+    Left = 117
+    Height = 25
+    Top = 128
+    Width = 75
+    Caption = 'Stop'
+    OnClick = StopButtonClick
+    TabOrder = 1
+  end
+  object ClearButton: TButton
+    Left = 69
+    Height = 25
+    Top = 168
+    Width = 75
+    Caption = 'Clear'
+    OnClick = ClearButtonClick
+    TabOrder = 2
+  end
+  object Timer: TTimer
+    Enabled = False
+    OnTimer = TimerTimer
+    left = 40
+    top = 48
+  end
+end
