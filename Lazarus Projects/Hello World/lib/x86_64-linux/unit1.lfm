@@ -1,0 +1,27 @@
+object Form1: TForm1
+  Left = 415
+  Height = 387
+  Top = 141
+  Width = 536
+  Caption = 'Form1'
+  ClientHeight = 387
+  ClientWidth = 536
+  LCLVersion = '1.8.2.0'
+  object ButtonTest: TButton
+    Left = 216
+    Height = 33
+    Top = 40
+    Width = 104
+    Caption = 'Just Button'
+    OnClick = ButtonTestClick
+    TabOrder = 0
+  end
+  object LabelTest: TLabel
+    Left = 192
+    Height = 17
+    Top = 96
+    Width = 165
+    Caption = 'Nothing Interesting Here'
+    ParentColor = False
+  end
+end
