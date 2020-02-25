@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1535575190"/>
+  <Params Value=" -MObjFPC -Scghi -CX -Cg -O1 -Xs -XX -l -vewnhibq &quot;-Fi/home/rudigus/Github/pascal-ainda-vive/Lazarus Projects/Calculator/lib/x86_64-linux&quot; -Fu/usr/lib/lazarus/1.8.2/lcl/units/x86_64-linux/gtk2 -Fu/usr/lib/lazarus/1.8.2/lcl/units/x86_64-linux -Fu/usr/lib/lazarus/1.8.2/components/lazutils/lib/x86_64-linux -Fu/usr/lib/lazarus/1.8.2/packager/units/x86_64-linux &quot;-Fu/home/rudigus/Github/pascal-ainda-vive/Lazarus Projects/Calculator/&quot; &quot;-FU/home/rudigus/Github/pascal-ainda-vive/Lazarus Projects/Calculator/lib/x86_64-linux/&quot; -dLCL -dLCLgtk2 simple_calculator.lpr"/>
+</CONFIG>
