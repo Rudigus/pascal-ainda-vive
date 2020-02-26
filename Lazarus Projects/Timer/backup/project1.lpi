@@ -34,7 +34,7 @@
       <Unit1>
         <Filename Value="unit1.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Timera"/>
+        <ComponentName Value="TimerForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>

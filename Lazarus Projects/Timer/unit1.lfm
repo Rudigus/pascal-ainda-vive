@@ -1,48 +1,62 @@
 object TimerForm: TTimerForm
-  Left = 1050
-  Height = 217
-  Top = 138
-  Width = 209
+  Left = 379
+  Height = 256
+  Top = 249
+  Width = 512
   Caption = 'Timer'
-  ClientHeight = 217
-  ClientWidth = 209
+  ClientHeight = 256
+  ClientWidth = 512
+  Constraints.MinHeight = 256
+  Constraints.MinWidth = 512
   LCLVersion = '1.8.2.0'
   object Display: TLabel
-    Left = 24
+    AnchorSideBottom.Control = StartButton
+    Left = 46
     Height = 73
-    Top = 24
-    Width = 168
-    Alignment = taCenter
-    AutoSize = False
-    Caption = '0s'
+    Top = 18
+    Width = 420
+    Anchors = [akBottom]
+    BorderSpacing.Bottom = 25
+    Caption = '59h 59min 59s'
     Font.Height = -64
     Font.Name = 'Ubuntu'
     ParentColor = False
     ParentFont = False
   end
   object StartButton: TButton
-    Left = 24
+    AnchorSideRight.Control = ClearButton
+    AnchorSideRight.Side = asrBottom
+    Left = 168
     Height = 25
-    Top = 128
+    Top = 116
     Width = 75
+    Anchors = [akRight]
+    BorderSpacing.Right = 50
     Caption = 'Start'
     OnClick = StartButtonClick
     TabOrder = 0
   end
   object StopButton: TButton
-    Left = 117
+    AnchorSideLeft.Control = ClearButton
+    Left = 268
     Height = 25
-    Top = 128
+    Top = 116
     Width = 75
+    Anchors = [akLeft]
+    BorderSpacing.Left = 50
     Caption = 'Stop'
     OnClick = StopButtonClick
     TabOrder = 1
   end
   object ClearButton: TButton
-    Left = 69
+    AnchorSideTop.Control = StartButton
+    AnchorSideTop.Side = asrBottom
+    Left = 218
     Height = 25
-    Top = 168
+    Top = 166
     Width = 75
+    Anchors = [akTop]
+    BorderSpacing.Top = 25
     Caption = 'Clear'
     OnClick = ClearButtonClick
     TabOrder = 2
@@ -50,7 +64,5 @@ object TimerForm: TTimerForm
   object Timer: TTimer
     Enabled = False
     OnTimer = TimerTimer
-    left = 40
-    top = 48
   end
 end
