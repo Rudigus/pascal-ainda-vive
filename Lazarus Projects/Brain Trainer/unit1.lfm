@@ -1,0 +1,95 @@
+object BrainTrainer: TBrainTrainer
+  Left = 1050
+  Height = 256
+  Top = 138
+  Width = 259
+  Caption = 'Brain Trainer'
+  ClientHeight = 256
+  ClientWidth = 259
+  Color = clNone
+  Constraints.MinHeight = 256
+  Constraints.MinWidth = 256
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object ScorePanel: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 259
+    Align = alTop
+    Caption = 'Score: 0'
+    Color = clSilver
+    Font.Color = clPurple
+    Font.Height = -24
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+  end
+  object OperandNumber1: TLabel
+    AnchorSideRight.Control = OperationSymbol
+    Left = 40
+    Height = 17
+    Top = 119
+    Width = 16
+    Anchors = [akRight]
+    BorderSpacing.Right = 15
+    Caption = '99'
+    ParentColor = False
+  end
+  object OperationSymbol: TLabel
+    AnchorSideRight.Control = OperandNumber2
+    Left = 71
+    Height = 17
+    Top = 119
+    Width = 8
+    Anchors = [akRight]
+    BorderSpacing.Right = 15
+    Caption = '+'
+    ParentColor = False
+  end
+  object OperandNumber2: TLabel
+    AnchorSideRight.Control = EqualsSymbol
+    Left = 94
+    Height = 17
+    Top = 119
+    Width = 16
+    Anchors = [akRight]
+    BorderSpacing.Right = 15
+    Caption = '99'
+    ParentColor = False
+  end
+  object EqualsSymbol: TLabel
+    Left = 125
+    Height = 17
+    Top = 119
+    Width = 8
+    Anchors = []
+    Caption = '='
+    ParentColor = False
+  end
+  object ResultEdit: TEdit
+    AnchorSideLeft.Control = EqualsSymbol
+    AnchorSideLeft.Side = asrBottom
+    Left = 158
+    Height = 27
+    Top = 114
+    Width = 80
+    Anchors = [akLeft]
+    BorderSpacing.Left = 25
+    OnKeyPress = ResultEditKeyPress
+    TabOrder = 1
+  end
+  object SubmitButton: TButton
+    AnchorSideTop.Control = EqualsSymbol
+    AnchorSideTop.Side = asrBottom
+    Left = 92
+    Height = 25
+    Top = 161
+    Width = 75
+    Anchors = [akTop]
+    BorderSpacing.Top = 25
+    Caption = 'Submit'
+    OnClick = SubmitButtonClick
+    TabOrder = 2
+  end
+end
