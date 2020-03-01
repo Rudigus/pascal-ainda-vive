@@ -100,6 +100,9 @@ end;
 
 procedure TForm1.DisplayResult(ValueVat, ValueNoVat, Vat: Single);
 begin
+  {ValueVatLabel.Caption := FloatToStr(ValueVat);
+  ValueNoVatLabel.Caption := FloatToStr(ValueNoVat);
+  VatLabel.Caption := FloatToStr(Vat);}
   ValueVatLabel.Caption := 'R$ ' + FloatToStrF(ValueVat, ffNumber, 18, 2);
   ValueNoVatLabel.Caption := 'R$ ' + FloatToStrF(ValueNoVat, ffNumber, 18, 2);
   VatLabel.Caption := 'R$ ' + FloatToStrF(Vat, ffNumber, 18, 2);
