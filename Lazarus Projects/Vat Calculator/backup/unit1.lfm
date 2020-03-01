@@ -1,0 +1,142 @@
+object Form1: TForm1
+  Left = 792
+  Height = 385
+  Top = 261
+  Width = 320
+  Caption = 'VAT Calculator'
+  ClientHeight = 385
+  ClientWidth = 320
+  LCLVersion = '2.0.6.0'
+  object Label1: TLabel
+    Left = 24
+    Height = 17
+    Top = 24
+    Width = 41
+    Caption = 'Valor:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 240
+    Height = 17
+    Top = 24
+    Width = 33
+    Caption = 'reais'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 17
+    Top = 62
+    Width = 115
+    Caption = 'Taxa de Imposto:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 240
+    Height = 17
+    Top = 62
+    Width = 13
+    Caption = '%'
+    ParentColor = False
+  end
+  object AddVatButton: TButton
+    Left = 24
+    Height = 25
+    Top = 96
+    Width = 100
+    Caption = 'Add VAT'
+    OnClick = AddVatButtonClick
+    TabOrder = 0
+  end
+  object RemoveVatButton: TButton
+    Left = 152
+    Height = 25
+    Top = 96
+    Width = 100
+    Caption = 'Remove VAT'
+    OnClick = RemoveVatButtonClick
+    TabOrder = 1
+  end
+  object ValueEdit: TEdit
+    Left = 152
+    Height = 27
+    Top = 20
+    Width = 82
+    TabOrder = 2
+    Text = '100'
+  end
+  object TaxRateComboBox: TComboBox
+    Left = 152
+    Height = 29
+    Top = 56
+    Width = 82
+    ItemHeight = 0
+    ItemIndex = 3
+    Items.Strings = (
+      '17'
+      '18'
+      '19'
+      '20'
+    )
+    TabOrder = 3
+    Text = '20'
+  end
+  object GroupBox1: TGroupBox
+    Left = 24
+    Height = 184
+    Top = 144
+    Width = 224
+    Caption = 'Results'
+    ClientHeight = 165
+    ClientWidth = 220
+    TabOrder = 4
+    object Label5: TLabel
+      Left = 10
+      Height = 17
+      Top = 70
+      Width = 29
+      Caption = 'VAT:'
+      ParentColor = False
+    end
+    object ValueNoVatLabel: TLabel
+      Left = 144
+      Height = 17
+      Top = 32
+      Width = 38
+      Caption = 'Value'
+      ParentColor = False
+    end
+    object Label7: TLabel
+      Left = 10
+      Height = 17
+      Top = 32
+      Width = 104
+      Caption = 'Value excl. VAT:'
+      ParentColor = False
+    end
+    object VatLabel: TLabel
+      Left = 144
+      Height = 17
+      Top = 70
+      Width = 38
+      Caption = 'Value'
+      ParentColor = False
+    end
+    object Label9: TLabel
+      Left = 10
+      Height = 17
+      Top = 110
+      Width = 100
+      Caption = 'Value incl. VAT:'
+      ParentColor = False
+    end
+    object ValueVatLabel: TLabel
+      Left = 144
+      Height = 17
+      Top = 110
+      Width = 38
+      Caption = 'Value'
+      ParentColor = False
+    end
+  end
+end
