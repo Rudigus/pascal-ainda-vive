@@ -25,10 +25,14 @@ type
     procedure GameTimerTimer(Sender: TObject);
     procedure PaddleMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
       );
+    procedure RestartLabelClick(Sender: TObject);
+    procedure RestartLabelMouseEnter(Sender: TObject);
+    procedure RestartLabelMouseLeave(Sender: TObject);
   private
     procedure InitGame;
     procedure UpdateScore;
     procedure GameOver;
+    procedure IncreaseSpeed;
   public
 
   end;
@@ -70,17 +74,13 @@ begin
   // Collision with the paddle's top border
   if (Ball.Left + Ball.Width >= Paddle.Left) and
      (Ball.Left <= Paddle.Left + Paddle.Width) and
-     (Ball.Top + Ball.Height >= Paddle.Top) and
-     (abs(Ball.Left - Paddle.Left) >= abs(Ball.Top - Paddle.Top))
-    then SpeedY := -SpeedY;
-  {if (Ball.Top + Ball.Height >= Paddle.Top) and
-     (Ball.Top <= Paddle.Top + Paddle.Height) and
-     ((Ball.Left + Ball.Width >= Paddle.Left) or
-     (Ball.Left <= Paddle.Left + Paddle.Width)) then
+     (Ball.Top + Ball.Height >= Paddle.Top) then
   begin
-    SpeedX := -SpeedX;
+    IncreaseSpeed;
     SpeedY := -SpeedY;
-  end;             }
+    Inc(Score);
+    UpdateScore;
+  end;
 end;
 
 procedure TForm1.PaddleMouseMove(Sender: TObject; Shift: TShiftState; X,
@@ -89,13 +89,36 @@ begin
   ControlPaddle(Sender, Shift, X + Paddle.Left, Y + Paddle.Top);
 end;
 
+procedure TForm1.RestartLabelClick(Sender: TObject);
+begin
+  InitGame;
+end;
+
+procedure TForm1.RestartLabelMouseEnter(Sender: TObject);
+begin
+  RestartLabel.Font.Style := [fsBold];
+end;
+
+procedure TForm1.RestartLabelMouseLeave(Sender: TObject);
+begin
+  RestartLabel.Font.Style := [];
+end;
+
 procedure TForm1.InitGame;
 begin
   Score := 0;
   SpeedX := 4;
   SpeedY := 4;
+
   GameOverLabel.Hide;
   RestartLabel.Hide;
+  RestartLabel.Font.Style := [];
+
+  Ball.Left := 10;
+  Ball.Top := 10;
+
+  GameTimer.Enabled := True;
+
   UpdateScore;
 end;
 
@@ -106,7 +129,15 @@ end;
 
 procedure TForm1.GameOver;
 begin
-  { TODO : Create game over screen }
+  GameTimer.Enabled := False;
+  GameOverLabel.Show();
+  RestartLabel.Show();
+end;
+
+procedure TForm1.IncreaseSpeed;
+begin
+  if SpeedX > 0 then Inc(SpeedX) else Dec(SpeedX);
+  if SpeedY > 0 then Inc(SpeedY) else Dec(SpeedY);
 end;
 
 end.

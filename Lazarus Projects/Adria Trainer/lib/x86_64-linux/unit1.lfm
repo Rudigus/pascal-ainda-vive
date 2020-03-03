@@ -1,0 +1,56 @@
+object Form1: TForm1
+  Left = 318
+  Height = 439
+  Top = 148
+  Width = 642
+  Caption = 'Form1'
+  ClientHeight = 439
+  ClientWidth = 642
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object Numero: TLabel
+    AnchorSideLeft.Control = Label2
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Label2
+    AnchorSideTop.Side = asrCenter
+    Left = 269
+    Height = 17
+    Top = 216
+    Width = 55
+    Caption = 'Numero'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 208
+    Height = 17
+    Top = 216
+    Width = 61
+    Caption = 'A raiz de '
+    ParentColor = False
+  end
+  object Label1: TLabel
+    AnchorSideLeft.Control = Numero
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Numero
+    AnchorSideTop.Side = asrCenter
+    Left = 324
+    Height = 17
+    Top = 216
+    Width = 11
+    Caption = ' é'
+    ParentColor = False
+  end
+  object NumeroEdit: TEdit
+    AnchorSideLeft.Control = Label1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Label2
+    AnchorSideTop.Side = asrCenter
+    Left = 350
+    Height = 27
+    Top = 211
+    Width = 80
+    BorderSpacing.Left = 15
+    OnKeyPress = NumeroEditKeyPress
+    TabOrder = 0
+  end
+end
