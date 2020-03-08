@@ -21,7 +21,7 @@
    inkscape:version="0.92.4 (f8dce91, 2019-08-02)"><metadata
    id="metadata260"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
    id="defs258" /><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
@@ -99,7 +99,7 @@
    class="logo-st2"
    points="234.3,154.8 258.5,196.7 213.2,275.2 189,233.3 "
    id="polygon4"
-   style="fill:#d40000" />
+   style="fill:#aa0000" />
 	<radialGradient
    id="SVGID_1_"
    cx="-254.81979"
@@ -164,7 +164,7 @@
    class="logo-st5"
    points="234.3,154.8 247.9,215 258.5,196.7 "
    id="polygon28"
-   style="fill:#aa0000" />
+   style="fill:#800000" />
 </g>
 
 <g
