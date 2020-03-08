@@ -3,7 +3,6 @@ object Form1: TForm1
   Height = 556
   Top = 147
   Width = 700
-  BorderStyle = bsSingle
   Caption = 'Solo Pong'
   ClientHeight = 556
   ClientWidth = 700

@@ -5,9 +5,8 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, simpleipc, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  StdCtrls, ExtDlgs, DBGrids, EditBtn, ShellCtrls, ShortPathEdit, TAGraph,
-  TASources, TAStyles;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls,
+  StdCtrls, DBGrids, EditBtn, TAGraph;
 
 type
 
