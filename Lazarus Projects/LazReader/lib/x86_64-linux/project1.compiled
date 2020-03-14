@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1540814642"/>
+  <Params Value=" -MObjFPC -Scghi -CX -Cg -O1 -Xs -XX -l -vewnhibq &quot;-Fi/home/rudigus/Github/pascal-ainda-vive/Lazarus Projects/LazReader/lib/x86_64-linux&quot; -Fu/home/rudigus/.lazarus/onlinepackagemanager/packages/internettools-master/data -Fu/usr/share/lazarus/2.0.6/lcl/units/x86_64-linux/gtk2 -Fu/usr/share/lazarus/2.0.6/lcl/units/x86_64-linux -Fu/home/rudigus/.lazarus/onlinepackagemanager/packages/internettools-master/lib/x86_64-linux -Fu/home/rudigus/.lazarus/onlinepackagemanager/packages/synapse40.1/lib/x86_64-linux -Fu/usr/share/lazarus/2.0.6/components/lazutils/lib/x86_64-linux -Fu/usr/share/lazarus/2.0.6/packager/units/x86_64-linux &quot;-Fu/home/rudigus/Github/pascal-ainda-vive/Lazarus Projects/LazReader/&quot; &quot;-FU/home/rudigus/Github/pascal-ainda-vive/Lazarus Projects/LazReader/lib/x86_64-linux/&quot; &quot;-FE/home/rudigus/Github/pascal-ainda-vive/Lazarus Projects/LazReader/&quot; &quot;-o/home/rudigus/Github/pascal-ainda-vive/Lazarus Projects/LazReader/project1&quot; -dLCL -dLCLgtk2 project1.lpr"/>
+</CONFIG>
